@@ -7,6 +7,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-size: 26px;
 }
 
 /* 
@@ -82,7 +83,7 @@ footer li a {
 
 .boutons_hover:hover {
   background: rgba(249, 165, 92, 0.2);
-  border-radius: 40%;
+  border-radius: 40px;
 }
 
 .boutons_serres {
@@ -168,4 +169,39 @@ header,
   #bottom_footer {
     padding: 10px 20px;
   }
+}
+
+/*formulaire de recherche*/
+header #formulaire-recherche {
+  background: rgb(248, 158, 6);
+  padding: 40px 50px;
+  width: max-content;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 60px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+
+header #formulaire-recherche section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 1em;
+}
+
+#loupe-icon {
+  width: 50px;
+  background: deeppink;
+  color: black;
+  padding: 8px;
+  border-radius: 30px;
+}
+
+#formulaire-recherche label {
+  color: green;
+}
+
+#formulaire-recherche input {
+  color: grey;
 }
