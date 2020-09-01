@@ -8,6 +8,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: 26px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* 
@@ -173,8 +174,7 @@ header,
 
 /*formulaire de recherche*/
 header #formulaire-recherche {
-  background: rgb(248, 158, 6);
-  padding: 40px 50px;
+  background: rgba(254, 205, 136, 0.6);
   width: max-content;
   margin-top: 20px;
   margin-left: auto;
@@ -187,21 +187,71 @@ header #formulaire-recherche {
 header #formulaire-recherche section {
   display: flex;
   flex-direction: column;
-  padding: 0px 1em;
+  padding: 10px 20px;
+  border-radius: 70px;
+  justify-content: center;
 }
 
-#loupe-icon {
+#formulaire-recherche #demande_lieu {
+  padding: 10px 60px;
+}
+
+#formulaire-recherche label {
+  color: green;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+#formulaire-recherche input {
+  color: grey;
+  border: none;
+  height: 35px;
+  background: none;
+  font-size: 19px;
+}
+
+#formulaire-recherche input:focus {
+  outline: none;
+}
+
+#formulaire-recherche .section_hover:hover,
+.section_hover input:hover {
+  background: rgba(225, 150, 80, 0.3);
+  cursor: pointer;
+}
+
+#formulaire-recherche .section_hover label:hover {
+  cursor: pointer;
+}
+
+#formulaire-recherche .separateur_vertical {
+  background: grey;
+  width: 1px;
+  padding: -7px 0px;
+  margin: 22px 0px;
+}
+
+header #formulaire-recherche section:last-child {
+  margin: 0;
+  padding-left: 0px;
+}
+
+header #formulaire-recherche section:last-child:hover {
+  background: transparent;
+}
+
+#formulaire-recherche #loupe-icon {
   width: 50px;
-  background: deeppink;
+  background: rgba(255, 20, 147, 1);
   color: black;
   padding: 8px;
   border-radius: 30px;
 }
 
-#formulaire-recherche label {
-  color: green;
+#formulaire-recherche #loupe-icon:hover {
+  background: rgba(197, 52, 131, 1);
 }
 
-#formulaire-recherche input {
-  color: grey;
+header #formulaire-recherche #demande_visiteurs {
+  padding-right: 0px;
 }
