@@ -11,16 +11,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* 
-##          ###    ##    ##  #######  ##     ## ######## 
-##         ## ##    ##  ##  ##     ## ##     ##    ##    
-##        ##   ##    ####   ##     ## ##     ##    ##    
-##       ##     ##    ##    ##     ## ##     ##    ##    
-##       #########    ##    ##     ## ##     ##    ##    
-##       ##     ##    ##    ##     ## ##     ##    ##    
-######## ##     ##    ##     #######   #######     ##    
- */
-
 /*
 ##     ## ########    ###    ########  ######## ########  
 ##     ## ##         ## ##   ##     ## ##       ##     ## 
@@ -92,19 +82,42 @@ footer li a {
 }
 
 /*formulaire de recherche*/
+
+/* header #formulaire-recherche-mobile  {
+  visibility: hidden;
+  color: red;
+} */
+
 header #formulaire-recherche {
   background: rgba(254, 205, 136, 0.6);
-  width: 70%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 848px;
   border-radius: 60px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
   display: flex;
 }
 
-@media (max-width: 947px) {
-Ò
+@media (max-width: 928px) {
+  /* à partir de 928px, la taille du formulaire de recherche n'est plus fixe elle réduit quand on réduit la page pour qu'elle rentre dans la page*/
+  header #formulaire-recherche {
+    width: 95%;
+  }
+
+  header #formulaire-recherche #demande_lieu,
+  header #formulaire-recherche #demande_date_arrivee,
+  header #formulaire-recherche #demande_date_depart,
+  header #formulaire-recherche #demande_visiteurs {
+    width: 22%;
+  }
+}
+
+@media (max-width: 740px) {
+  /* passer en mode mobile */
+  header #formulaire-recherche {
+    visibility: hidden;
+  }
 }
 
 header #formulaire-recherche section {
@@ -264,7 +277,7 @@ footer {
 header,
 #sommaire,
 #bottom_footer {
-  padding: 10px 70px;
+  padding: 10px 40px;
 }
 
 @media (max-width: 375px) {
