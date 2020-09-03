@@ -31,7 +31,8 @@ body {
   color: white;
 }
 
-.header-home #barre-d-accueil {
+.header-home #barre-d-accueil,
+.header-layout #barre-d-accueil {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,23 +43,24 @@ body {
   .header-home #barre-d-accueil {
     visibility: hidden;
   }
+  .header-layout #barre-d-accueil {
+    visibility: hidden;
+  }
 }
 
 .header-home ul,
+.header-layout ul,
 #footer-layout ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   flex-direction: row;
-}
-
-.header-home li,
-#footer-layout li {
-  margin: 20px;
+  align-items: center;
 }
 
 .header-home li a,
+.header-layout li a,
 #footer-layout li a {
   text-decoration: none;
   color: inherit;
@@ -71,11 +73,13 @@ body {
   }
 }
 
-.header-home .boutons_hover {
-  padding: 15px;
+.header-home .boutons_hover,
+.header-layout .boutons_hover {
+  padding: 8px;
 }
 
-.header-home .boutons_hover:hover {
+.header-home .boutons_hover:hover,
+.header-layout .boutons_hover:hover {
   background: rgba(249, 165, 92, 0.2);
   border-radius: 40px;
 }
@@ -84,11 +88,11 @@ body {
   display: flex;
   align-items: center;
   padding: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
-.header-home #mon_compte i {
+.header-home #mon_compte i,
+.header-layout #mon_compte i {
   padding-right: 2px;
 }
 
@@ -100,64 +104,20 @@ body {
 /* barre d'accueil LAYOUT */
 
 .header-layout {
-  color: white;
-}
-
-.header-layout #barre-d-accueil {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 15px;
-}
-
-@media (max-width: 740px) {
-  .header-layout #barre-d-accueil {
-    visibility: hidden;
-  }
-}
-
-.header-layout ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-}
-
-.header-layout li {
-  margin: 20px;
-}
-
-.header-layout li a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: normal;
-}
-
-.header-layout .boutons_hover {
-  padding: 15px;
-}
-
-.header-layout .boutons_hover:hover {
-  background: rgba(249, 165, 92, 0.2);
-  border-radius: 40px;
+  color: black;
 }
 
 .header-layout #mon_compte {
   display: flex;
   align-items: center;
-  padding: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.header-layout #mon_compte i {
-  padding-right: 2px;
+  padding: 10px;
+  margin: 0px;
 }
 
 .header-layout #mon_compte:hover {
-  background: rgba(242, 245, 247, 0.2);
-  border-radius: 40px;
+  border: 1px solid rgba(82, 83, 83, 0.2);
+  border-radius: 35px;
+  box-shadow: 1px 1px 0px grey;
 }
 
 /*formulaire de recherche*/
@@ -173,7 +133,7 @@ body {
   margin-right: auto;
   width: 848px;
   border-radius: 60px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.363);
   display: flex;
 }
 
@@ -412,6 +372,7 @@ body {
 }
 
 .header-layout,
+.header-home,
 #footer-layout #sommaire,
 #footer-layout #bottom_footer {
   padding: 10px 40px;

@@ -1,1 +1,42 @@
-PAGE RESULTATS
+<main id="resultat-recherche">
+    <form id="formulaire-recherche-reduit" action=""> <!--à supprimer quand view mobile avec le .js-->
+        <section class="section_hover" id="demande_lieu">
+            <label for="">Lieu</label>
+            <input type="text" placeholder="Où allez-vous ?">
+        </section>
+        <div class="separateur_vertical"></div>
+        <section class="section_hover" id="demande_date_arrivee">
+            <label for="">Arrivée</label>
+            <input type="date" placeholder="Ajouter des dates">
+        </section>
+        <div class="separateur_vertical"></div>
+        <section class="section_hover" id="demande_date_depart">
+            <label for="">Départ</label>
+            <input type="date" placeholder="Ajouter des dates">
+        </section>
+        <div class="separateur_vertical"></div>
+        <section class="section_hover" id="demande_visiteurs">
+            <label for="" >Visiteurs</label>
+            <input type="text" placeholder="Ajouter des visiteurs">
+        </section>
+        <section id="loupe_recherche">
+            <img id="loupe-icon" src="images/loupe-icon.png" alt="loupe">
+        </section>
+    </form>
+    {{!-- mobile view--}}
+    <form id="formulaire-recherche-mobile" action=""> <!--à supprimer quand view normale avec le .js-->
+        <img id="loupe-icon-mobile" src="images/loupe-icon.png" alt="loupe">
+        <label for="" ></label>
+        <input type="text" placeholder="Où allez-vous ?">
+    </form>
+    <section>
+        <p>nature et localisation de l'exploitation </p>
+        <h2>Titre de l'annonce</h2>
+        <p>nombre de voyageurs max</p>
+        <p>natures de la production (maraichers, viandes, cereals, vigne, fromage...)</p>
+        <p>certifications (AOP, bio, biodynamique)</p>
+        <p>taille de l'exploitation</p>
+        <p>durée de la visite</p>
+        <p>note donnée par les visiteurs (nbre de visites déjà effectuées)</p>
+    </section>
+</main>
