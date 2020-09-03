@@ -9,7 +9,6 @@ body {
   padding: 0px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
-  /* width: 100vw; */
 }
 
 /*
@@ -21,7 +20,7 @@ body {
 ##     ## ##       ##     ## ##     ## ##       ##    ##  
 ##     ## ######## ##     ## ########  ######## ##     ## 
 */
-header {
+#header-layout {
   height: 100vh;
   background: url("images/ble.jpeg");
   background-size: cover;
@@ -29,7 +28,7 @@ header {
   color: white;
 }
 
-header #barre-d-accueil {
+#header-layout #barre-d-accueil {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,12 +36,12 @@ header #barre-d-accueil {
 }
 
 @media (max-width: 740px) {
-  header #barre-d-accueil {
+  #header-layout #barre-d-accueil {
     visibility: hidden;
   }
 }
 
-header ul,
+#header-layout ul,
 footer ul {
   display: flex;
   list-style: none;
@@ -51,12 +50,12 @@ footer ul {
   flex-direction: row;
 }
 
-header li,
+#header-layout li,
 footer li {
   margin: 20px;
 }
 
-header li a,
+#header-layout li a,
 footer li a {
   text-decoration: none;
   color: inherit;
@@ -69,20 +68,16 @@ footer li a {
   }
 }
 
-.boutons_hover {
+#header-layout .boutons_hover {
   padding: 15px;
 }
 
-.boutons_hover:hover {
+#header-layout .boutons_hover:hover {
   background: rgba(249, 165, 92, 0.2);
   border-radius: 40px;
 }
 
-.boutons_serres {
-  justify-content: center;
-}
-
-#mon_compte {
+#header-layout #mon_compte {
   display: flex;
   align-items: center;
   padding: 15px;
@@ -90,22 +85,22 @@ footer li a {
   margin-bottom: 0px;
 }
 
-#mon_compte i {
+#header-layout #mon_compte i {
   padding-right: 2px;
 }
 
-#mon_compte:hover {
+#header-layout #mon_compte:hover {
   background: rgba(242, 245, 247, 0.2);
   border-radius: 40px;
 }
 
 /*formulaire de recherche*/
 
-header #formulaire-recherche-mobile {
+#header-layout #formulaire-recherche-mobile {
   visibility: hidden;
 }
 
-header #formulaire-recherche {
+#header-layout #formulaire-recherche {
   background: rgba(254, 205, 136, 0.6);
   margin-top: 20px;
   margin-left: auto;
@@ -118,30 +113,30 @@ header #formulaire-recherche {
 
 @media (max-width: 928px) {
   /* à partir de 928px, la taille du formulaire de recherche n'est plus fixe elle réduit quand on réduit la page pour qu'elle rentre dans la page*/
-  header #formulaire-recherche {
+  #header-layout #formulaire-recherche {
     width: 95%;
   }
 
-  header #formulaire-recherche #demande_lieu,
-  header #formulaire-recherche #demande_date_arrivee,
-  header #formulaire-recherche #demande_date_depart,
-  header #formulaire-recherche #demande_visiteurs {
+  #header-layout #formulaire-recherche #demande_lieu,
+  #header-layout #formulaire-recherche #demande_date_arrivee,
+  #header-layout #formulaire-recherche #demande_date_depart,
+  #header-layout #formulaire-recherche #demande_visiteurs {
     width: 22%;
   }
 }
 
 @media (max-width: 740px) {
   /* passer en mode mobile */
-  header #formulaire-recherche {
+  #header-layout #formulaire-recherche {
     visibility: hidden;
   }
 
-  header #formulaire-recherche-mobile {
+  #header-layout #formulaire-recherche-mobile {
     visibility: visible;
   }
 }
 
-header #formulaire-recherche-mobile {
+#header-layout #formulaire-recherche-mobile {
   background: rgba(254, 205, 136, 0.6);
   border-radius: 50px;
   display: flex;
@@ -150,13 +145,13 @@ header #formulaire-recherche-mobile {
   height: 50px;
 }
 
-header #formulaire-recherche-mobile #loupe-icon-mobile {
+#header-layout #formulaire-recherche-mobile #loupe-icon-mobile {
   width: 25px;
   align-self: center;
   margin-right: 10px;
 }
 
-header #formulaire-recherche-mobile input {
+#header-layout #formulaire-recherche-mobile input {
   color: grey;
   border: none;
   height: 35px;
@@ -167,11 +162,11 @@ header #formulaire-recherche-mobile input {
   width: 210px;
 }
 
-#formulaire-recherche-mobile input:focus {
+#header-layout #formulaire-recherche-mobile input:focus {
   outline: none;
 }
 
-header #formulaire-recherche section {
+#header-layout #formulaire-recherche section {
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
@@ -179,17 +174,17 @@ header #formulaire-recherche section {
   justify-content: center;
 }
 
-#formulaire-recherche #demande_lieu {
+#header-layout #formulaire-recherche #demande_lieu {
   padding: 10px 1em 10px 3em;
 }
 
-#formulaire-recherche label {
+#header-layout #formulaire-recherche label {
   color: green;
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-#formulaire-recherche input {
+#header-layout #formulaire-recherche input {
   color: grey;
   border: none;
   height: 35px;
@@ -198,37 +193,37 @@ header #formulaire-recherche section {
   font-family: inherit;
 }
 
-#formulaire-recherche input:focus {
+#header-layout #formulaire-recherche input:focus {
   outline: none;
 }
 
-#formulaire-recherche .section_hover:hover,
+#header-layout #formulaire-recherche .section_hover:hover,
 .section_hover input:hover {
   background: rgba(225, 150, 80, 0.3);
   cursor: pointer;
 }
 
-#formulaire-recherche .section_hover label:hover {
+#header-layout #formulaire-recherche .section_hover label:hover {
   cursor: pointer;
 }
 
-#formulaire-recherche .separateur_vertical {
+#header-layout #formulaire-recherche .separateur_vertical {
   background: grey;
   width: 1px;
   padding: -7px 0px;
   margin: 22px 0px;
 }
 
-header #formulaire-recherche section:last-child {
+#header-layout #formulaire-recherche section:last-child {
   margin: 0;
   padding-left: 0px;
 }
 
-header #formulaire-recherche section:last-child:hover {
+#header-layout #formulaire-recherche section:last-child:hover {
   background: transparent;
 }
 
-#formulaire-recherche #loupe-icon {
+#header-layout #formulaire-recherche #loupe-icon {
   width: 60px;
   background: rgba(255, 20, 147, 1);
   color: black;
@@ -236,7 +231,7 @@ header #formulaire-recherche section:last-child:hover {
   border-radius: 30px;
 }
 
-#formulaire-recherche #loupe_recherche {
+#header-layout #formulaire-recherche #loupe_recherche {
   flex: 1;
   padding-right: 10px;
   padding-left: 5px;
@@ -245,30 +240,30 @@ header #formulaire-recherche section:last-child:hover {
   align-self: center;
 }
 
-#formulaire-recherche #loupe-icon:hover {
+#header-layout #formulaire-recherche #loupe-icon:hover {
   background: rgba(197, 52, 131, 1);
   cursor: pointer;
 }
 
-#formulaire-recherche #loupe_recherche:hover {
+#header-layout #formulaire-recherche #loupe_recherche:hover {
   cursor: pointer;
 }
 
-header #formulaire-recherche #demande_visiteurs {
+#header-layout #formulaire-recherche #demande_visiteurs {
   padding-right: 0px;
 }
 
-header #slogan {
+#header-layout #slogan {
   text-shadow: 1px 1px 8px black;
   font-size: 20px;
   margin-top: 58px;
 }
 
-header #slogan h1 {
+#header-layout #slogan h1 {
   font-size: 32px;
 }
 
-header #slogan p {
+#header-layout #slogan p {
   font-size: 20px;
 }
 /*
@@ -282,7 +277,7 @@ header #slogan p {
 */
 /* footer sommaire */
 
-#sommaire {
+#footer-layout #sommaire ul {
   padding-left: 0px;
   justify-content: space-between;
 }

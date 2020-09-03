@@ -9,6 +9,11 @@ app.set("view engine", "hbs");
 app.use(express.static("public"));
 
 //routes
-app.get("/", (req, res, next) => res.render("home"));
+app.get("/", (req, res, next) => {
+  const data = {
+    layout: false,
+  };
+  res.render("home", data);
+});
 
 app.listen(3001);
