@@ -9,6 +9,7 @@ body {
   padding: 0px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+  /* width: 100vw; */
 }
 
 /*
@@ -62,7 +63,7 @@ footer li a {
   font-weight: normal;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 740px) {
   footer ul {
     flex-direction: column;
   }
@@ -79,6 +80,23 @@ footer li a {
 
 .boutons_serres {
   justify-content: center;
+}
+
+#mon_compte {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#mon_compte i {
+  padding-right: 2px;
+}
+
+#mon_compte:hover {
+  background: rgba(242, 245, 247, 0.2);
+  border-radius: 40px;
 }
 
 /*formulaire de recherche*/
@@ -120,32 +138,37 @@ header #formulaire-recherche {
 
   header #formulaire-recherche-mobile {
     visibility: visible;
-    background: rgba(254, 205, 136, 0.6);
-    border-radius: 50px;
-    display: flex;
-    padding-left: 15px;
-    align-items: center;
-    height: 50px;
   }
+}
 
-  header #formulaire-recherche-mobile #loupe-icon-mobile {
-    width: 25px;
-    align-self: center;
-    margin-right: 10px;
-  }
+header #formulaire-recherche-mobile {
+  background: rgba(254, 205, 136, 0.6);
+  border-radius: 50px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  height: 50px;
+}
 
-  header #formulaire-recherche-mobile input {
-    align-self: center;
-  }
+header #formulaire-recherche-mobile #loupe-icon-mobile {
+  width: 25px;
+  align-self: center;
+  margin-right: 10px;
+}
 
-  header #formulaire-recherche-mobile input {
-    color: grey;
-    border: none;
-    height: 35px;
-    background: none;
-    font-size: 13px;
-    font-family: inherit;
-  }
+header #formulaire-recherche-mobile input {
+  color: grey;
+  border: none;
+  height: 35px;
+  background: none;
+  font-size: 13px;
+  font-family: inherit;
+  align-self: center;
+  width: 210px;
+}
+
+#formulaire-recherche-mobile input:focus {
+  outline: none;
 }
 
 header #formulaire-recherche section {
@@ -224,12 +247,30 @@ header #formulaire-recherche section:last-child:hover {
 
 #formulaire-recherche #loupe-icon:hover {
   background: rgba(197, 52, 131, 1);
+  cursor: pointer;
+}
+
+#formulaire-recherche #loupe_recherche:hover {
+  cursor: pointer;
 }
 
 header #formulaire-recherche #demande_visiteurs {
   padding-right: 0px;
 }
 
+header #slogan {
+  text-shadow: 1px 1px 8px black;
+  font-size: 20px;
+  margin-top: 58px;
+}
+
+header #slogan h1 {
+  font-size: 32px;
+}
+
+header #slogan p {
+  font-size: 20px;
+}
 /*
 ########  #######   #######  ######## ######## ########  
 ##       ##     ## ##     ##    ##    ##       ##     ## 
@@ -271,10 +312,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 8px;
+  font-size: 11px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 740px) {
   #bottom_footer {
     flex-direction: column;
     align-items: start;
@@ -286,7 +327,14 @@ footer {
   }
 
   #bottom_footer ul li {
-    margin: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  #bottom_footer {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -299,13 +347,14 @@ footer {
 }
 
 #bottom_footer ul li {
-  margin: 5px;
+  margin: 2px;
 }
 
 header,
 #sommaire,
 #bottom_footer {
   padding: 10px 40px;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 375px) {
@@ -321,5 +370,6 @@ i {
 }
 
 #liens_reseaux {
-  width: 20%;
+  display: flex;
+  justify-content: flex-end;
 }

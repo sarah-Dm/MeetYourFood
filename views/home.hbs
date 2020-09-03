@@ -1,6 +1,6 @@
 {{!-- formulaire de recherche --}}
 <section id="page_acceuil">
-<form id="formulaire-recherche" action="">
+<form id="formulaire-recherche" action=""> <!--à supprimer quand view mobile avec le .js-->
     <section class="section_hover" id="demande_lieu">
         <label for="">Lieu</label>
         <input type="text" placeholder="Où allez-vous ?">
@@ -24,12 +24,18 @@
         <img id="loupe-icon" src="images/loupe-icon.png" alt="loupe">
     </section>
 </form>
-<form id="formulaire-recherche-mobile" action="">
+{{!-- mobile view--}}
+<form id="formulaire-recherche-mobile" action=""> <!--à supprimer quand view normale avec le .js-->
     <img id="loupe-icon-mobile" src="images/loupe-icon.png" alt="loupe">
-    <label for="" >Où allez-vous ?</label>
-    <input type="text">
+    <label for="" ></label>
+    <input type="text" placeholder="Où allez-vous ?">
  </form>
 
+<section id="slogan">
+ <h1>Allez à la rencontre </h1>
+ <h1>de votre assiette</h1>
+ <p>Aventurez vous dans les coulisses de votre alimentation</p>
+</section>
 {{!-- slogan --}}
 {{!-- exemples --}}
 {{!-- à l'affiche --}}
