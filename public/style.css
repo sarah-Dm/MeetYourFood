@@ -21,13 +21,85 @@ body {
 ##     ## ######## ##     ## ########  ######## ##     ## 
 */
 
-/* barre d'accueil */
+/* barre d'accueil HOME */
 
-.header-layout {
+.header-home {
   height: 100vh;
   background: url("images/ble.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+}
+
+.header-home #barre-d-accueil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+@media (max-width: 740px) {
+  .header-home #barre-d-accueil {
+    visibility: hidden;
+  }
+}
+
+.header-home ul,
+#footer-layout ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+}
+
+.header-home li,
+#footer-layout li {
+  margin: 20px;
+}
+
+.header-home li a,
+#footer-layout li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+
+@media (max-width: 740px) {
+  #footer-layout ul {
+    flex-direction: column;
+  }
+}
+
+.header-home .boutons_hover {
+  padding: 15px;
+}
+
+.header-home .boutons_hover:hover {
+  background: rgba(249, 165, 92, 0.2);
+  border-radius: 40px;
+}
+
+.header-home #mon_compte {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-home #mon_compte i {
+  padding-right: 2px;
+}
+
+.header-home #mon_compte:hover {
+  background: rgba(242, 245, 247, 0.2);
+  border-radius: 40px;
+}
+
+/* barre d'accueil LAYOUT */
+
+.header-layout {
   color: white;
 }
 
@@ -44,8 +116,7 @@ body {
   }
 }
 
-.header-layout ul,
-footer ul {
+.header-layout ul {
   display: flex;
   list-style: none;
   margin: 0;
@@ -53,22 +124,14 @@ footer ul {
   flex-direction: row;
 }
 
-.header-layout li,
-footer li {
+.header-layout li {
   margin: 20px;
 }
 
-.header-layout li a,
-#footer-layout li a {
+.header-layout li a {
   text-decoration: none;
   color: inherit;
   font-weight: normal;
-}
-
-@media (max-width: 740px) {
-  #footer-layout ul {
-    flex-direction: column;
-  }
 }
 
 .header-layout .boutons_hover {

@@ -16,4 +16,8 @@ app.get("/", (req, res, next) => {
   res.render("home", data);
 });
 
+app.get("/resultats", (req, res, next) => {
+  res.render("resultat-recherche");
+});
+
 app.listen(3001);
