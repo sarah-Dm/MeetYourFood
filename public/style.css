@@ -20,7 +20,10 @@ body {
 ##     ## ##       ##     ## ##     ## ##       ##    ##  
 ##     ## ######## ##     ## ########  ######## ##     ## 
 */
-#header-layout {
+
+/* barre d'accueil */
+
+.header-layout {
   height: 100vh;
   background: url("images/ble.jpeg");
   background-size: cover;
@@ -28,7 +31,7 @@ body {
   color: white;
 }
 
-#header-layout #barre-d-accueil {
+.header-layout #barre-d-accueil {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,12 +39,12 @@ body {
 }
 
 @media (max-width: 740px) {
-  #header-layout #barre-d-accueil {
+  .header-layout #barre-d-accueil {
     visibility: hidden;
   }
 }
 
-#header-layout ul,
+.header-layout ul,
 footer ul {
   display: flex;
   list-style: none;
@@ -50,34 +53,34 @@ footer ul {
   flex-direction: row;
 }
 
-#header-layout li,
+.header-layout li,
 footer li {
   margin: 20px;
 }
 
-#header-layout li a,
-footer li a {
+.header-layout li a,
+#footer-layout li a {
   text-decoration: none;
   color: inherit;
   font-weight: normal;
 }
 
 @media (max-width: 740px) {
-  footer ul {
+  #footer-layout ul {
     flex-direction: column;
   }
 }
 
-#header-layout .boutons_hover {
+.header-layout .boutons_hover {
   padding: 15px;
 }
 
-#header-layout .boutons_hover:hover {
+.header-layout .boutons_hover:hover {
   background: rgba(249, 165, 92, 0.2);
   border-radius: 40px;
 }
 
-#header-layout #mon_compte {
+.header-layout #mon_compte {
   display: flex;
   align-items: center;
   padding: 15px;
@@ -85,22 +88,22 @@ footer li a {
   margin-bottom: 0px;
 }
 
-#header-layout #mon_compte i {
+.header-layout #mon_compte i {
   padding-right: 2px;
 }
 
-#header-layout #mon_compte:hover {
+.header-layout #mon_compte:hover {
   background: rgba(242, 245, 247, 0.2);
   border-radius: 40px;
 }
 
 /*formulaire de recherche*/
 
-#header-layout #formulaire-recherche-mobile {
+.header-home #formulaire-recherche-mobile {
   visibility: hidden;
 }
 
-#header-layout #formulaire-recherche {
+.header-home #formulaire-recherche {
   background: rgba(254, 205, 136, 0.6);
   margin-top: 20px;
   margin-left: auto;
@@ -113,30 +116,30 @@ footer li a {
 
 @media (max-width: 928px) {
   /* à partir de 928px, la taille du formulaire de recherche n'est plus fixe elle réduit quand on réduit la page pour qu'elle rentre dans la page*/
-  #header-layout #formulaire-recherche {
+  .header-home #formulaire-recherche {
     width: 95%;
   }
 
-  #header-layout #formulaire-recherche #demande_lieu,
-  #header-layout #formulaire-recherche #demande_date_arrivee,
-  #header-layout #formulaire-recherche #demande_date_depart,
-  #header-layout #formulaire-recherche #demande_visiteurs {
+  .header-home #formulaire-recherche #demande_lieu,
+  .header-home #formulaire-recherche #demande_date_arrivee,
+  .header-home #formulaire-recherche #demande_date_depart,
+  .header-home #formulaire-recherche #demande_visiteurs {
     width: 22%;
   }
 }
 
 @media (max-width: 740px) {
   /* passer en mode mobile */
-  #header-layout #formulaire-recherche {
+  .header-home #formulaire-recherche {
     visibility: hidden;
   }
 
-  #header-layout #formulaire-recherche-mobile {
+  .header-home #formulaire-recherche-mobile {
     visibility: visible;
   }
 }
 
-#header-layout #formulaire-recherche-mobile {
+.header-home #formulaire-recherche-mobile {
   background: rgba(254, 205, 136, 0.6);
   border-radius: 50px;
   display: flex;
@@ -145,13 +148,13 @@ footer li a {
   height: 50px;
 }
 
-#header-layout #formulaire-recherche-mobile #loupe-icon-mobile {
+.header-home #formulaire-recherche-mobile #loupe-icon-mobile {
   width: 25px;
   align-self: center;
   margin-right: 10px;
 }
 
-#header-layout #formulaire-recherche-mobile input {
+.header-home #formulaire-recherche-mobile input {
   color: grey;
   border: none;
   height: 35px;
@@ -162,11 +165,11 @@ footer li a {
   width: 210px;
 }
 
-#header-layout #formulaire-recherche-mobile input:focus {
+.header-home #formulaire-recherche-mobile input:focus {
   outline: none;
 }
 
-#header-layout #formulaire-recherche section {
+.header-home #formulaire-recherche section {
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
@@ -174,17 +177,17 @@ footer li a {
   justify-content: center;
 }
 
-#header-layout #formulaire-recherche #demande_lieu {
+.header-home #formulaire-recherche #demande_lieu {
   padding: 10px 1em 10px 3em;
 }
 
-#header-layout #formulaire-recherche label {
+.header-home #formulaire-recherche label {
   color: green;
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-#header-layout #formulaire-recherche input {
+.header-home #formulaire-recherche input {
   color: grey;
   border: none;
   height: 35px;
@@ -193,37 +196,37 @@ footer li a {
   font-family: inherit;
 }
 
-#header-layout #formulaire-recherche input:focus {
+.header-home #formulaire-recherche input:focus {
   outline: none;
 }
 
-#header-layout #formulaire-recherche .section_hover:hover,
+.header-home #formulaire-recherche .section_hover:hover,
 .section_hover input:hover {
   background: rgba(225, 150, 80, 0.3);
   cursor: pointer;
 }
 
-#header-layout #formulaire-recherche .section_hover label:hover {
+.header-home #formulaire-recherche .section_hover label:hover {
   cursor: pointer;
 }
 
-#header-layout #formulaire-recherche .separateur_vertical {
+.header-home #formulaire-recherche .separateur_vertical {
   background: grey;
   width: 1px;
   padding: -7px 0px;
   margin: 22px 0px;
 }
 
-#header-layout #formulaire-recherche section:last-child {
+.header-home #formulaire-recherche section:last-child {
   margin: 0;
   padding-left: 0px;
 }
 
-#header-layout #formulaire-recherche section:last-child:hover {
+.header-home #formulaire-recherche section:last-child:hover {
   background: transparent;
 }
 
-#header-layout #formulaire-recherche #loupe-icon {
+.header-home #formulaire-recherche #loupe-icon {
   width: 60px;
   background: rgba(255, 20, 147, 1);
   color: black;
@@ -231,7 +234,7 @@ footer li a {
   border-radius: 30px;
 }
 
-#header-layout #formulaire-recherche #loupe_recherche {
+.header-home #formulaire-recherche #loupe_recherche {
   flex: 1;
   padding-right: 10px;
   padding-left: 5px;
@@ -240,30 +243,30 @@ footer li a {
   align-self: center;
 }
 
-#header-layout #formulaire-recherche #loupe-icon:hover {
+.header-home #formulaire-recherche #loupe-icon:hover {
   background: rgba(197, 52, 131, 1);
   cursor: pointer;
 }
 
-#header-layout #formulaire-recherche #loupe_recherche:hover {
+.header-home #formulaire-recherche #loupe_recherche:hover {
   cursor: pointer;
 }
 
-#header-layout #formulaire-recherche #demande_visiteurs {
+.header-home #formulaire-recherche #demande_visiteurs {
   padding-right: 0px;
 }
 
-#header-layout #slogan {
+.header-home #slogan {
   text-shadow: 1px 1px 8px black;
   font-size: 20px;
   margin-top: 58px;
 }
 
-#header-layout #slogan h1 {
+.header-home #slogan h1 {
   font-size: 32px;
 }
 
-#header-layout #slogan p {
+.header-home #slogan p {
   font-size: 20px;
 }
 /*
@@ -282,28 +285,28 @@ footer li a {
   justify-content: space-between;
 }
 
-#sommaire ul {
+#footer-layout #sommaire ul {
   flex-direction: column;
   padding-left: 0px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-#sommaire ul li {
+#footer-layout #sommaire ul li {
   margin: 4px;
   font-weight: 800;
 }
 
-#sommaire ul li :nth-child(1) {
+#footer-layout #sommaire ul li :nth-child(1) {
   font-weight: 200;
 }
 
 /* bottom footer */
-footer {
+#footer-layout {
   background: #ebe6e1;
 }
 
-#bottom_footer {
+#footer-layout #bottom_footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -311,60 +314,60 @@ footer {
 }
 
 @media (max-width: 740px) {
-  #bottom_footer {
+  #footer-layout #bottom_footer {
     flex-direction: column;
     align-items: start;
   }
 
-  #bottom_footer > ul {
+  #footer-layout #bottom_footer > ul {
     display: flex;
     flex-direction: row;
   }
 
-  #bottom_footer ul li {
+  #footer-layout #bottom_footer ul li {
     margin-right: 5px;
   }
 }
 
 @media (min-width: 740px) and (max-width: 1024px) {
-  #bottom_footer {
+  #footer-layout #bottom_footer {
     flex-direction: column;
     align-items: center;
   }
 }
 
-#bottom_footer img {
+#footer-layout #bottom_footer img {
   width: 2em;
 }
 
-#bottom_footer ul {
+#footer-layout #bottom_footer ul {
   align-items: center;
 }
 
-#bottom_footer ul li {
+#footer-layout #bottom_footer ul li {
   margin: 2px;
 }
 
-header,
-#sommaire,
-#bottom_footer {
+.header-layout,
+#footer-layout #sommaire,
+#footer-layout #bottom_footer {
   padding: 10px 40px;
   justify-content: space-evenly;
 }
 
 @media (max-width: 375px) {
-  header,
-  #sommaire,
-  #bottom_footer {
+  .header-layout,
+  #footer-layout #sommaire,
+  #footer-layout #bottom_footer {
     padding: 10px 20px;
   }
 }
 
-i {
+#footer-layout i {
   font-size: 20px;
 }
 
-#liens_reseaux {
+#footer-layout #liens_reseaux {
   display: flex;
   justify-content: flex-end;
 }

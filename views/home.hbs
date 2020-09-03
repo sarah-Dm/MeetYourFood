@@ -9,60 +9,61 @@
  <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="header-layout">
-      <nav id="barre-d-accueil">
-        <img src="#" alt="logo" />
-        <ul>
-          <li><a class="boutons_hover" href="#"> Devenir producteur-hôte</a></li>
-          <li><a class="boutons_hover" href="#"> Langues</a></li>
-          <li id="mon_compte">
-            <i class="fas fa-user-circle"></i>
-            <a href="#"> Mon compte</a></li>
-        </ul>
-      </nav>
-      {{!-- formulaire de recherche --}}
-    <section id="page_acceuil">
-    <form id="formulaire-recherche" action=""> <!--à supprimer quand view mobile avec le .js-->
-        <section class="section_hover" id="demande_lieu">
-            <label for="">Lieu</label>
-            <input type="text" placeholder="Où allez-vous ?">
+    <header class="header-home header-layout">
+        <nav id="barre-d-accueil">
+            <img src="#" alt="logo" />
+            <ul>
+            <li><a class="boutons_hover" href="#"> Devenir producteur-hôte</a></li>
+            <li><a class="boutons_hover" href="#"> Langues</a></li>
+            <li id="mon_compte">
+                <i class="fas fa-user-circle"></i>
+                <a href="#"> Mon compte</a></li>
+            </ul>
+        </nav>
+      {{!-- FORMULAIRE DE RECHERCHE --}}
+        <section id="page_acceuil">
+            <form id="formulaire-recherche" action=""> <!--à supprimer quand view mobile avec le .js-->
+                <section class="section_hover" id="demande_lieu">
+                    <label for="">Lieu</label>
+                    <input type="text" placeholder="Où allez-vous ?">
+                </section>
+                <div class="separateur_vertical"></div>
+                <section class="section_hover" id="demande_date_arrivee">
+                    <label for="">Arrivée</label>
+                    <input type="date" placeholder="Ajouter des dates">
+                </section>
+                <div class="separateur_vertical"></div>
+                <section class="section_hover" id="demande_date_depart">
+                    <label for="">Départ</label>
+                    <input type="date" placeholder="Ajouter des dates">
+                </section>
+                <div class="separateur_vertical"></div>
+                <section class="section_hover" id="demande_visiteurs">
+                    <label for="" >Visiteurs</label>
+                    <input type="text" placeholder="Ajouter des visiteurs">
+                </section>
+                <section id="loupe_recherche">
+                    <img id="loupe-icon" src="images/loupe-icon.png" alt="loupe">
+                </section>
+            </form>
+            {{!-- mobile view--}}
+            <form id="formulaire-recherche-mobile" action=""> <!--à supprimer quand view normale avec le .js-->
+                <img id="loupe-icon-mobile" src="images/loupe-icon.png" alt="loupe">
+                <label for="" ></label>
+                <input type="text" placeholder="Où allez-vous ?">
+            </form>
+            {{!-- SLOGAN --}}
+            <section id="slogan">
+                <h1>Allez à la rencontre </h1>
+                <h1>de votre assiette</h1>
+                <p>Aventurez vous dans les coulisses de votre alimentation</p>
+            </section>
+            {{!--EXEMPLES--}}
+            {{!-- A L'AFFICHE --}}
         </section>
-        <div class="separateur_vertical"></div>
-        <section class="section_hover" id="demande_date_arrivee">
-            <label for="">Arrivée</label>
-            <input type="date" placeholder="Ajouter des dates">
-        </section>
-        <div class="separateur_vertical"></div>
-        <section class="section_hover" id="demande_date_depart">
-            <label for="">Départ</label>
-            <input type="date" placeholder="Ajouter des dates">
-        </section>
-        <div class="separateur_vertical"></div>
-        <section class="section_hover" id="demande_visiteurs">
-            <label for="" >Visiteurs</label>
-            <input type="text" placeholder="Ajouter des visiteurs">
-        </section>
-        <section id="loupe_recherche">
-            <img id="loupe-icon" src="images/loupe-icon.png" alt="loupe">
-        </section>
-    </form>
-    {{!-- mobile view--}}
-    <form id="formulaire-recherche-mobile" action=""> <!--à supprimer quand view normale avec le .js-->
-        <img id="loupe-icon-mobile" src="images/loupe-icon.png" alt="loupe">
-        <label for="" ></label>
-        <input type="text" placeholder="Où allez-vous ?">
-    </form>
-
-    <section id="slogan">
-    <h1>Allez à la rencontre </h1>
-    <h1>de votre assiette</h1>
-    <p>Aventurez vous dans les coulisses de votre alimentation</p>
-    </section>
-    {{!-- slogan --}}
-    {{!-- exemples --}}
-    {{!-- à l'affiche --}}
-    </section>
     </header>
+
+
     <footer id="footer-layout">
       <ul id="sommaire">
         <ul>
@@ -95,9 +96,9 @@
           <li>Plan de site</li>
         </ul>
         <ul>
-          <li>langue de la page</li>
+          <li>[langue de la page]</li>
           <!--langage of the page-->
-          <li>devise de la page</li>
+          <li>[devise de la page]</li>
           <!--currency of the page-->
         </ul>
         <ul id="liens_reseaux">
